@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>D365 F&amp;O Academy</title>
+  <meta name="description" content="Learn Dynamics 365 Finance & Operations modules: concepts, step-by-step how-to guides, business processes and quizzes.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/">
+      <span class="brand-mark" aria-hidden="true">F&amp;O</span>
+      <span class="brand-name">D365 F&amp;O Academy</span>
+    </a>
+    <nav class="mainnav" aria-label="Main">
+      <a href="#/" data-nav="home">Modules</a>
+      <a href="#/processes" data-nav="processes">Processes</a>
+      <a href="#/glossary" data-nav="glossary">Glossary</a>
+      <a href="#/flashcards" data-nav="flashcards">Flashcards</a>
+    </nav>
+    <form class="search" id="searchForm" role="search">
+      <input id="searchInput" type="search" placeholder="Search modules, tasks, terms…" aria-label="Search">
+    </form>
+    <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark mode" title="Toggle theme">◐</button>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="footer">
+    <p>Unofficial study aid. Menu paths follow standard Dynamics 365 Finance and Supply Chain Management and may differ by version or configuration — always confirm in Microsoft Learn.</p>
+    <p><button type="button" class="link-btn" id="resetProgress">Reset my progress</button></p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
