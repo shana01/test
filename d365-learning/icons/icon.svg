@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#2563eb"/>
+  <path d="M96 176 L256 112 L416 176 L256 240 Z" fill="#ffffff"/>
+  <path d="M160 214 V292 C160 324 352 324 352 292 V214 L256 252 Z" fill="#ffffff" opacity=".85"/>
+  <text x="256" y="420" text-anchor="middle" font-family="Segoe UI, Roboto, Arial, sans-serif" font-weight="800" font-size="104" fill="#ffffff" letter-spacing="2">F&amp;O</text>
+</svg>

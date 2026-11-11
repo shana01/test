@@ -24,6 +24,17 @@ The app is plain HTML, CSS and JavaScript, with no build step and no dependencie
 - serve the folder: `python3 -m http.server -d d365-learning 8000`, then go to <http://localhost:8000>, or
 - publish it with GitHub Pages.
 
+## Installing it on a phone
+
+The app is a Progressive Web App: it gets a home-screen icon, opens full screen, and works offline once it has loaded.
+
+- **iPhone or iPad (Safari):** open the site, tap **Share**, then **Add to Home Screen**.
+- **Android (Chrome):** open the site, tap **⋮**, then **Install app** (or **Add to Home screen**).
+
+Live site: <https://shana01.github.io/test/d365-learning/>
+
+When you change a cached file, the app shows the update on its next launch. If you add or rename files, bump `CACHE` in `sw.js`.
+
 ## Adding or editing content
 
 All learning content is in [`js/data.js`](js/data.js). To add a module, add an object to `D365_MODULES` with these fields:
