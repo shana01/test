@@ -70,6 +70,10 @@ code, .path { font-family: ui-monospace, "Cascadia Code", Consolas, monospace; }
   position: sticky; top: 0; z-index: 10;
   display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
   padding: 10px 24px;
+  /* keep clear of the notch / status bar when launched from the home screen */
+  padding-top: calc(10px + env(safe-area-inset-top));
+  padding-left: calc(24px + env(safe-area-inset-left));
+  padding-right: calc(24px + env(safe-area-inset-right));
   background: var(--surface);
   border-bottom: 1px solid var(--border);
 }
@@ -222,7 +226,10 @@ mark { background: #fde68a; color: #1b2330; border-radius: 3px; padding: 0 2px; 
 .flash-controls { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; }
 
 @media (max-width: 760px) {
-  .topbar { padding: 10px 16px; gap: 10px; }
+  .topbar {
+    gap: 10px;
+    padding: calc(10px + env(safe-area-inset-top)) calc(16px + env(safe-area-inset-right)) 10px calc(16px + env(safe-area-inset-left));
+  }
   .brand-name { display: none; }
   .mainnav { order: 3; width: 100%; overflow-x: auto; }
   .search { order: 1; max-width: none; margin-left: 0; }
